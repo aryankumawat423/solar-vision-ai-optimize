@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
 import GlassCard from '../ui/GlassCard';
-import { Search, Zap, MapPin, Smartphone, VisionPro, LineChart, MessageCircle } from 'lucide-react';
+import { Search, Zap, MapPin, Smartphone, Glasses, LineChart, MessageCircle } from 'lucide-react';
 
 const features = [
   {
@@ -35,7 +35,7 @@ const features = [
   {
     title: 'VR Simulation',
     description: 'Virtual reality simulations of sunlight angles throughout the year on your property.',
-    icon: VisionPro,
+    icon: Glasses,
     color: 'text-purple-500',
     delay: 0.4
   },
