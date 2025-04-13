@@ -29,35 +29,35 @@ const features = [
     title: 'AR Placement',
     description: 'Augmented reality visualizations show optimal panel positioning on your actual roof.',
     icon: Smartphone,
-    color: 'text-pink-500',
+    color: 'text-sky-500',
     delay: 0.3
   },
   {
     title: 'VR Simulation',
     description: 'Virtual reality simulations of sunlight angles throughout the year on your property.',
     icon: Glasses,
-    color: 'text-purple-500',
+    color: 'text-indigo-500',
     delay: 0.4
   },
   {
     title: 'Historical Data Analysis',
     description: 'Analyze panel performance over time and identify patterns to maximize efficiency.',
     icon: LineChart,
-    color: 'text-blue-500',
+    color: 'text-emerald-500',
     delay: 0.5
   },
   {
     title: 'AI Chatbot Support',
     description: 'Get instant answers to your solar questions from our NLP-powered assistant.',
     icon: MessageCircle,
-    color: 'text-green-500',
+    color: 'text-teal-500',
     delay: 0.6
   }
 ];
 
 const Features = () => {
   return (
-    <section id="features" className="py-24 bg-white">
+    <section id="features" className="py-24 bg-gradient-to-br from-blue-50/50 to-white">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -66,7 +66,7 @@ const Features = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Powered by Advanced Technology</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">Powered by Advanced Technology</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our platform combines artificial intelligence, computer vision, and augmented reality
             to revolutionize solar panel management and optimization.
@@ -82,8 +82,8 @@ const Features = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: feature.delay }}
             >
-              <GlassCard>
-                <div className={`${feature.color} p-3 inline-flex rounded-full bg-gray-100 mb-4`}>
+              <GlassCard className="hover:shadow-xl transition-shadow duration-300">
+                <div className={`${feature.color} p-3 inline-flex rounded-full bg-gray-100/50 mb-4`}>
                   <feature.icon size={28} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
